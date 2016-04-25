@@ -29,16 +29,17 @@ declare module 'react-bootstrap-validation' {
     interface ValidatedInputProps extends React.Props<ValidatedInputClass> {
         name: string;
         validationEvent?: string;
-        validate: any;
+        validate?: any;
         type: any;
         label: any;
         errorHelp?: any;
         maxLength?: string;
         id?: string | number;
         placeholder?: string;
+        className?: string;
     }
 
-    // Radio ComponentA
+    // Radio Component
     var Radio: RadioClass;
     interface Radio extends React.ReactElement<RadioProps> { }
     interface RadioClass extends React.ComponentClass<RadioProps> { }
